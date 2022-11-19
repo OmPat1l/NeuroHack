@@ -12,6 +12,8 @@
     rel="stylesheet">
 
   <title>MindSpark | NeuroHack</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +35,58 @@ https://templatemo.com/tm-563-seo-dream
 </head>
 
 <body>
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          FAQs:
+          Q. What is the evaluation criterion?
+          A. The evaluation criteria for Stage 2 ascends in the following order:
+          1) Accuracy of the model on the validation set.
+          2) Uniqueness and the modularity of the code.
+          3) Efficiency of the code.
+          4) Ability to be generalized for similar problems.
+          5) Focus on Data Visualization and Data Cleaning.
+          Stage 1 will be an MCQ Quiz that will be conducted online. The top 10 scoring teams will qualify for the 2nd
+          round.
+
+          Q. Can I participate in other events of MindSpark’22?
+          A. You are free to participate in as many events as you wish. Also, other events are scheduled during the 3
+          days of MS’22 and Neurohack is an online event scheduled over a span of 2-3 days ending a week prior to MS’22
+          which leaves a lot of room for participation in other events.
+
+          Q. Do team members have to be from the same college?
+          A. As Neurohack is open to all events, there are no restrictions on the formulation of teams. Team members can
+          be from any year, any branch and any institution. However, one person cannot be a part of more than one team
+          for the same event.
+
+          Q. Are there any restrictions on programming languages to be used?
+          A. No, the code can be written in any programming language
+
+          Q. What libraries can I have access to?
+          A. Any library available for the language you want to use. except: autoML, other will be disclosed before
+          event.
+
+
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -67,9 +121,11 @@ https://templatemo.com/tm-563-seo-dream
               <li class="scroll-to-section"><a href="#services">Rules</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Gallery</a></li>
               <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-              <li class="scroll-to-section">
-                <div class="main-blue-button"><a href="#contact">Participate Now!</a></div>
-              </li>
+
+              <li><button type="button" class=" btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
+                  Launch static backdrop modal
+                </button></li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -646,6 +702,9 @@ given problem statement. Teams will have to give a presentation of their solutio
 
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
