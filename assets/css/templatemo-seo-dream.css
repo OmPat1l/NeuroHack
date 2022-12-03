@@ -277,7 +277,7 @@ body {
 }
 
 .section-heading h2 span {
-  color: #088ec3;
+  color: #FF4F6B;
 }
 
 .main-blue-button a {
@@ -351,6 +351,64 @@ header
   color: #fff;
 }
 
+@keyframes flickerI {
+  0% {
+    opacity: 0.4;
+  }
+
+  5% {
+    opacity: 0.5;
+  }
+
+  10% {
+    opacity: 0.6;
+  }
+
+  15% {
+    opacity: 0.85;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 0.1;
+  }
+
+  40% {
+    opacity: 0.25;
+  }
+
+  45% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.85;
+  }
+
+  80% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .background-header .nav li a.active:after {
   position: absolute;
   width: 20px;
@@ -360,6 +418,7 @@ header
   left: 50%;
   bottom: 0px;
   transform: translateX(-10px);
+  /* animation: 5s flickerI infinite; */
 }
 
 .header-area {
@@ -1088,13 +1147,14 @@ Features Style
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.first-feature:hover .icon {
+/* .first-feature:hover .icon {
   background-image: url(../images/features-icon-white-01.png);
 }
 
+
 .second-feature:hover .icon {
   background-image: url(../images/features-icon-white-02.png);
-}
+} */
 
 .features-item .number h6 {
   background-repeat: no-repeat;
@@ -1116,31 +1176,39 @@ Features Style
 }
 
 .features-item .second-number h6 {
-  background-image: url(../images/features-number-02.png);
+  background-image: url(../images/features-number-01.png);
 }
 
 .features-item .third-number h6 {
-  background-image: url(../images/features-number-03.png);
+  background-image: url(../images/features-number-01.png);
 }
 
 .features-item .fourth-number h6 {
-  background-image: url(../images/features-number-04.png);
+  background-image: url(../images/features-number-01.png);
 }
 
-.first-feature .icon {
-  background-image: url(../images/features-icon-black-01.png);
+/* .first-feature .icon {
+  background-image: url(../images/data-science.png);
 }
 
 .second-feature .icon {
   background-image: url(../images/features-icon-black-02.png);
 }
 
-.features-item .icon {
+.third-feature .icon {
+  background-image: url(../images/features-icon-black-02.png);
+}
+
+.fourth-feature .icon {
+  background-image: url(../images/features-icon-black-01.png);
+} */
+
+/* .features-item .icon {
   width: 63px;
   height: 63px;
   margin: 0 auto;
   transition: all 0.5s;
-}
+} */
 
 .features-item h4 {
   margin-left: 15px;
@@ -1498,8 +1566,8 @@ Services Style
   display: inline-block;
   text-align: center;
   line-height: 80px;
-  background-color: #f7f7f7;
-  border-radius: 50%;
+  /* background-color: #f7f7f7;
+  border-radius: 50%; */
 }
 
 .service-item .icon img {
