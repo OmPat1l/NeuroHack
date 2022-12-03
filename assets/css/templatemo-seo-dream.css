@@ -1042,6 +1042,7 @@ Banner Style
 .main-banner:before {
   content: '';
   background-image: url(../images/bg1.jpg);
+
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
