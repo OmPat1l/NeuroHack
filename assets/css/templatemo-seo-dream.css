@@ -1042,9 +1042,9 @@ Banner Style
 
 .main-banner:before {
   content: '';
-  background-image: url(../images/bg1.jpg);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 54% 45%);
-  clip-path: polygon(0 0, 100% 0, 100% 81%, 54% 45%);
+  /* background-image: url(../images/bg1.jpg); */
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 54% 45%);
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 54% 45%); */
 
   background-repeat: no-repeat;
   position: absolute;
