@@ -27,6 +27,18 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
+
+
+
+.herosection {
+  height: 90vh;
+
+
+  background: linear-gradient(rgba(16, 29, 44, 0.816), rgba(16, 29, 44, 0.815)), url('../images/pexels-lukas-669619.jpg') center center fixed;
+  background-size: cover;
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 /* 
@@ -96,6 +108,10 @@ figcaption {
   padding: 0;
   border: 0;
   outline: 0;
+}
+
+body {
+  box-sizing: border-box;
 }
 
 /* clear fix */
@@ -1013,7 +1029,7 @@ Banner Style
   background-position: center center;
   background-size: cover;
 
-  padding: 226px 0px 120px 0px;
+  /* padding: 226px 0px 120px 0px; */
   position: relative;
   overflow: hidden;
 }
