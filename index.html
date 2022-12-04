@@ -47,12 +47,12 @@ https://templatemo.com/tm-563-seo-dream
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content" style="border-radius:1%;">
         <div class="modal-header" style="
-        background-color: #33ccc5; 
+        background-color: #ffdeeb; 
         ">
           <h1 class="modal-title fs-5" id="staticBackdropLabel">Frequently Asked Questions</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="background-color: #ffdeeb">
           Q1] What is the evaluation criterion? <br>
           A] The evaluation criteria for Stage 2 ascends in the following order:<br>
           1) Accuracy of the model on the validation set.<br>
@@ -83,9 +83,11 @@ https://templatemo.com/tm-563-seo-dream
 
 
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+        <div class="modal-footer" style="
+        background-color: #ffdeeb;">
+
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+            style="background-color: #d6336c;">Understood</button>
         </div>
       </div>
     </div>
@@ -107,26 +109,28 @@ https://templatemo.com/tm-563-seo-dream
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+  <header class="header-area  wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="#top" class="logo">
-              <h4> <img src="assets/images/logoms.png" alt="" style="scale: 7; margin-left: 1rem; margin-top: .25rem;">
+              <h4> <img src="assets/images/logoms.png" alt="" class="mslogo">
               </h4>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class=" nav">
-              <li class="scroll-to-section"><a href="#" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#home1" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#features">Features</a></li>
               <li class="scroll-to-section"><a href="#about">Event Structure</a></li>
               <li class="scroll-to-section"><a href="#services">Rules</a></li>
 
               <!-- <li class="scroll-to-section"><a href="#portfolio">Gallery</a></li> -->
-              <li class="scroll-to-section"><a href="#footer">Contact Us</a></li>
+              <button type="button" style="color: #c92a2a; background-color: #dee2e6; margin-left:2rem;"
+                class=" btn btn-primary faq " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> FAQs
+              </button>
 
 
             </ul>
@@ -143,14 +147,18 @@ https://templatemo.com/tm-563-seo-dream
   <div class="herosection">
 
 
-    <div class="twocolgrid">
+    <div class="twocolgrid" id="home1">
       <div class="onetxt">
         <div class="mainhead">NeuroHack</div>
         <div class="subhead">TeamUp, Compete, Conquer.</div>
-        <div class="main-green-button"><a href="#">Participate Now!</a></div>
-        <button type="button" class=" btn btn-primary main-blue-button" data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"> FAQs
-        </button>
+        <div class="buttonsop">
+
+          <div class="main-green-button" style="margin-right: 1rem;"><a href="#">Participate Now!</a></div>
+          <button type="button" style="color: #c92a2a; background-color: #dee2e6;" class=" btn btn-primary faq "
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop"> FAQs
+          </button>
+        </div>
+
       </div>
       <div class="twoimg">
 
@@ -725,9 +733,7 @@ given problem statement. Teams will have to give a presentation of their solutio
         <div class="row">
           <div class="col-xl-4 col-lg-4 mb-50">
             <div class="footer-widget">
-              <div class="footer-logo">
-                <a href="index.html"><img src="../NeuroHack/assets/images/logoms.png" class="img-fluid" alt="logo"></a>
-              </div>
+
 
               <div class="footer-social-icon">
                 <span>Follow us</span>

@@ -44,16 +44,33 @@ font & reset css
   margin: auto;
 }
 
+.buttonsop {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+
+
+
+}
+
 .mainhead {
   font-family: 'Zen Dots', cursive;
   font-size: 5rem;
   color: #c92a2a;
+  margin: auto;
+}
+
+.faq {
+  border-radius: 20px;
+  padding: 12px 25px;
 }
 
 .subhead {
   font-family: 'Zen Dots', cursive;
   font-size: 2rem;
   color: #dee2e6;
+  margin: auto;
 }
 
 .twoimg {
@@ -481,7 +498,7 @@ header
 }
 
 .header-area {
-  position: fixed;
+  position: sticky;
   background-color: #212529;
   position: absolute;
   top: 0px;
@@ -592,7 +609,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff !important;
+  color: rgb(201, 42, 42) !important;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -814,6 +831,10 @@ header
 }
 
 @media (max-width: 992px) {
+  .twocolgrid {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
 
   .header-area .main-nav .nav li:last-child,
   .background-header .main-nav .nav li:last-child {
@@ -826,12 +847,27 @@ header
   }
 }
 
-@media (max-width: 767px) {
+.mslogo {
+  scale: 7;
+  margin-left: 1rem;
+  margin-top: .25rem;
+}
 
-  .twocolgrid {
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
+@media (max-width: 767px) {
+  .mslogo {
+    scale: 5;
   }
+
+  .mainhead {
+    font-size: 3rem;
+  }
+
+  .subhead {
+    font-size: 1rem;
+    margin: auto;
+  }
+
+
 
   .background-header .main-nav .nav {
     margin-top: 80px !important;
