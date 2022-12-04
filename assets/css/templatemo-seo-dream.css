@@ -28,10 +28,35 @@ font & reset css
 --------------------------------------------- 
 */
 
+.twocolgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  width: 90vw;
+  height: 70vh;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 5vw;
+  /* transform: translateX(50%); */
+}
+
+.imagehero {
+  background: url('../images/slide-1.png') fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 60vw;
+  height: 70vh;  */
+}
+
 
 
 .herosection {
-  height: 90vh;
+  height: 100vh;
+  position: relative;
 
 
   background: linear-gradient(rgba(16, 29, 44, 0.816), rgba(16, 29, 44, 0.815)), url('../images/pexels-lukas-669619.jpg') center center fixed;
@@ -784,6 +809,12 @@ header
 }
 
 @media (max-width: 767px) {
+
+  .twocolgrid {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+
   .background-header .main-nav .nav {
     margin-top: 80px !important;
   }
